@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace SistemaVenta.Entity;
 
-public partial class TipoDocumentoVentum
+public partial class Categoria
 {
-    public int IdTipoDocumentoVenta { get; set; }
+    public int IdCategoria { get; set; }
 
     public string? Descripcion { get; set; }
 
@@ -13,5 +13,5 @@ public partial class TipoDocumentoVentum
 
     public DateTime? FechaRegistro { get; set; }
 
-    public virtual ICollection<Ventum> Venta { get; } = new List<Ventum>();
+    public virtual ICollection<Producto> Productos { get; } = new List<Producto>();
 }

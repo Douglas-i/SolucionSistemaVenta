@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace SistemaVenta.Entity;
 
-public partial class Categorium
+public partial class TipoDocumentoVenta
 {
-    public int IdCategoria { get; set; }
+    public int IdTipoDocumentoVenta { get; set; }
 
     public string? Descripcion { get; set; }
 
@@ -13,5 +13,5 @@ public partial class Categorium
 
     public DateTime? FechaRegistro { get; set; }
 
-    public virtual ICollection<Producto> Productos { get; } = new List<Producto>();
+    public virtual ICollection<Venta> Venta { get; } = new List<Venta>();
 }
